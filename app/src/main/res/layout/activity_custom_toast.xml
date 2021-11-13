@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomToast">
+
+    <Button
+        android:id="@+id/normal_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal Toast"
+        app:layout_constraintBottom_toTopOf="@+id/custom_toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/custom_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Toast"
+        app:layout_constraintBottom_toTopOf="@+id/third_party_toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normal_toast" />
+
+    <Button
+        android:id="@+id/third_party_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Party Toast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_toast" />
+</androidx.constraintlayout.widget.ConstraintLayout>
